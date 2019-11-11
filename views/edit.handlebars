@@ -1,0 +1,38 @@
+<header>
+
+</header>
+
+
+
+<section>
+    <h1>Edit your profile</h1>
+    {{#if error}}
+    <div class = "error">Ooops! you left some field empty, please try again</div>
+    {{/if}}
+</section>
+
+<form method="POST">
+
+
+
+    <div class='editProfileContainer'>
+
+    <input name='first' placeholder="First Name" value = "{{first}}"><br>
+    <input name='last' placeholder="Last Name" value = "{{last}}"><br>
+    <input name='email' placeholder="e-mail address" value = "{{email}}"><br>
+    <input type='password' name='password' placeholder="Password"><br>
+    <input name='age' placeholder="Age" value = "{{age}}"><br>
+    <input name='city' placeholder="City" value = "{{city}}"><br>
+    <input name='url' placeholder="URL" value = "{{url}}"><br>
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    </div>
+    <section class = "bottonSection">
+    <button>Update</button>
+    <button><a href="/logout">Log out</a></button>
+</section>
+
+
+
+
+
+</form>

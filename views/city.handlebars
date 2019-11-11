@@ -1,0 +1,23 @@
+<headers>
+    <div class="cityConteiner">
+        <h1>Thank you {{first}} for your support!</h1>
+        <h2>Here you can see more people from {{city}} that also joined our cause</h2>
+        {{#locals}}
+            <p class='signers'>
+                {{#if url}}
+                    <a href="{{url}}" target="_blank">{{first}} {{last}}</a>
+                {{else}}
+                    {{first}} {{last}}
+                {{/if}}
+                {{#if age}}
+                    {{age}}
+                {{/if}}
+            </p>
+        {{/locals}}
+
+
+    </div>
+    <div class ="logout">
+        <button><a href="/logout">Log out</a></button>
+    </div>
+</headers>

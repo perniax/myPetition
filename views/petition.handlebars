@@ -1,0 +1,30 @@
+<header>
+
+</header>
+<section>
+    <h1>Petition</h1>
+{{#if error}}
+<div class = "error">Ooops! please give required data</div>
+{{/if}}
+</section>
+
+<form method="POST">
+    <main>
+    <div class='inputContainer'>
+
+    <input name='sig' type='hidden' id='sig'>
+    <canvas class="js-paint  paint-canvas" width="600" height="100"></canvas>
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+    <h4>Sign here</h4>
+    <button>Submit</button>
+
+    </div>
+
+
+
+    </main>
+
+
+
+</form>

@@ -1,0 +1,27 @@
+
+
+
+
+{{#if error}}
+<div class = "error">Wrong input, please try again</div>
+{{/if}}
+
+<section>
+    <h1>Please Log in</h1>
+</section>
+
+<form method="POST">
+
+    <div class='loginContainer'>
+
+    <input name='email' placeholder="e-mail address">
+    <input type='password' name='password' placeholder="password">
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+    <button>Log in</button>
+
+    </div>
+
+
+
+</form>

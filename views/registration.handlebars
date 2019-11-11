@@ -1,0 +1,32 @@
+<header>
+
+</header>
+
+
+
+{{#if error}}
+<div class = "error">Ooops! please give required data</div>
+{{/if}}
+
+<form method="POST">
+
+    <section>
+        <h1>Registration</h1>
+    </section>
+
+
+    <div class='registrationContainer'>
+
+    <input name='first' placeholder="First Name">
+    <input name='last' placeholder="Last Name">
+    <input name='email' placeholder="e-mail address">
+    <input type='password' name='password' placeholder="Password">
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    </div>
+
+    <section class = "bottonSection">
+    <button>Sign up</button>
+    <h2>If you are already a member, please<a href="/login"> log in</h2></a>
+    </section>
+
+</form>

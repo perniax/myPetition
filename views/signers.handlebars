@@ -1,0 +1,32 @@
+<headers>
+</headers>
+
+<section>
+
+    <h1>Thank you for your support!</h1>
+    <h2>Here you can see more people that have joined the cause</h2>
+
+</section>
+    <div class ="signersContainer">
+
+        {{#signers}}
+        <p class = "signersList">
+        {{#if url}}
+            <a href="{{url}}" target="_blank"s>{{first}} {{last}} | </a>
+         {{else}}
+             {{first}} {{last}} |
+         {{/if}}
+         {{#if age}}
+            {{age}}
+         {{/if}}
+         {{#if city}}
+            <a href="/signers/{{city}}"> {{city}}</a>
+         {{/if}}
+     </p>
+        {{/signers}}
+
+
+</div>
+    <section class = "bottonSection">
+        <button><a href="/logout">Log out</a></button>
+    </section>
